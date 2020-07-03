@@ -1,0 +1,26 @@
+
+public class InsertArray {
+
+	public static void main(String[] args) {
+        int a[]= {2,3,5,9,6,7};
+        int pos = 4;
+        int newValue=5;    
+        int c[]=new int[a.length+1];
+       for(int i=0; i<c.length; i++)
+       {
+       if(i<pos-1)
+       {
+    	   c[i]=a[i];
+       }
+       else if(i==(pos-1))
+       {
+    	   c[i]=newValue;
+       }
+       else
+       {
+    	   c[i]=a[i-1];
+       }
+       System.out.print(c[i]+" ");
+       }   
+}
+}
