@@ -1,0 +1,18 @@
+import java.util.*;
+public class Test5{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter");
+int year=sc.nextInt();
+int month=sc.nextInt();
+System.out.println(display(year,month));
+}
+static int display(int year, int month)
+{
+	Calendar cal=Calendar.getInstance();
+	cal.set(Calendar.YEAR,year);
+	cal.set(Calendar.MONTH,month);
+	int DAY_OF_MONTH=cal.getActualMaximum(cal.DAY_OF_MONTH);
+	return DAY_OF_MONTH;
+}
+}
